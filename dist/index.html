@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/index.9a4f27f5.css">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/RanaAbhishek12/Weather-Report/master/weather%20favicon.webp">
+   
+    <!--fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Weather App</h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userweather="">Your Weather</p>
+            <p class="tab" data-searchweather="">Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+
+            <!--grant location container-->
+            <div class="sub-container grant-location-container">
+                <img src="https://github.com/RanaAbhishek12/Weather-Report/blob/master/location.png?raw=true" width="80" height="80" loading="lazy" alt="location">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button class="btn" data-grantaccess="">Grant Access</button>
+            </div>
+
+            <!--Seach form -> form-container-->
+            <form class="form-container" data-searchform="">
+                <input placeholder="Search for City..." data-seachinput="">
+                <button class="btn" type="submit"><img src="https://github.com/RanaAbhishek12/Weather-Report/blob/master/search.png?raw=true" width="20" height="20" loading="lazy" alt="search"></button>
+            </form>
+
+            <!--Loading Screen Container-->
+            <div class="sub-container loading-container">
+                <img src="https://github.com/RanaAbhishek12/Weather-Report/blob/master/loading.gif?raw=true" width="150" height="150" loading="lazy" alt="loadng gif">
+                <p>Loading</p>
+            </div>
+
+            <!-- show weather info container/ User info Container-->
+            <div class="sub-container user-info-container">
+                <!--Location Name-Flag-->
+                <div class="name">
+                    <p data-cityname=""></p>
+                    <img data-countryicon="">
+                </div>
+
+                <!--weather desc-->
+                <p data-weatherdesc=""></p>
+
+                <!--weather type img-->
+                <img data-weathericon="">
+
+                <!--temprature-->
+                <p data-temp=""></p>
+
+                <!--3 parameters card-->
+                <div class="parameter-container">
+                    <!--1 card-->
+                    <div class="parameter">
+                        <img src="https://github.com/RanaAbhishek12/Weather-Report/blob/master/wind.png?raw=true" alt="">
+                        <p>Windspeed</p>
+                        <p data-windspeed=""></p>
+                    </div>
+                    <!--2 card-->
+                    <div class="parameter">
+                        <img src="https://github.com/RanaAbhishek12/Weather-Report/blob/master/humidity.png?raw=true" alt="">
+                        <p>Humidity</p>
+                        <p data-humidity=""></p>
+                    </div>
+                    <!--3 card-->
+                    <div class="parameter">
+                        <img src="https://github.com/RanaAbhishek12/Weather-Report/blob/master/cloud.png?raw=true" alt="">
+                        <p>Cloud</p>
+                        <p data-cloudiness=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/index.20df4e18.js"></script>
+<script src="/Weather-Report.3464ddca.js"></script></body>
+
+</html>

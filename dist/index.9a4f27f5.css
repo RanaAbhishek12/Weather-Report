@@ -1,0 +1,226 @@
+*, :before, :after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Merriweather Sans, sans-serif;
+}
+
+:root {
+  --colorDark1: #112d4e;
+  --colorDark2: #3f72af;
+  --colorLight1: #dbe2ef;
+  --colorLight2: #f9f7f7;
+}
+
+.wrapper {
+  color: var(--colorLight2);
+  background-image: url("https://github.com/RanaAbhishek12/Weather-Report/blob/master/bg.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.tab-container {
+  justify-content: space-between;
+  width: 90%;
+  max-width: 550px;
+  margin: 4rem auto 0;
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  letter-spacing: 1.75px;
+  padding: 5px 8px;
+  font-size: .875rem;
+}
+
+.tab.current-tab {
+  background-color: #dbe2ef80;
+  border-radius: 4px;
+}
+
+.weather-container {
+  margin-block: 4rem;
+}
+
+.sub-container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.grant-location-container img {
+  margin-bottom: 2rem;
+}
+
+.grant-location-container p:first-of-type {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.grant-location-container p:last-of-type {
+  letter-spacing: .75px;
+  margin-top: .75rem;
+  margin-bottom: 1.75rem;
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+.btn {
+  all: unset;
+  text-transform: uppercase;
+  background-color: var(--colorDark2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  font-size: .85rem;
+}
+
+.grant-location-container {
+  display: none;
+}
+
+.grant-location-container.active {
+  display: flex;
+}
+
+.loading-container {
+  display: none;
+}
+
+.loading-container.active {
+  display: flex;
+}
+
+.loading-container p {
+  text-transform: uppercase;
+}
+
+.form-container {
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  width: 90%;
+  max-width: 550px;
+  margin: 0 auto 3rem;
+  display: none;
+}
+
+.form-container.active {
+  display: flex;
+}
+
+.form-container input {
+  all: unset;
+  background-color: #dbe2ef80;
+  border-radius: 10px;
+  width: calc(100% - 80px);
+  height: 40px;
+  padding: 0 20px;
+}
+
+.form-container input::placeholder {
+  color: #ffffffb3;
+}
+
+.form-container input:focus {
+  outline: 3px solid #ffffffb3;
+}
+
+.form-container .btn {
+  padding: unset;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1px;
+  display: flex;
+}
+
+.user-info-container {
+  display: none;
+}
+
+.user-info-container.active {
+  display: flex;
+}
+
+.name {
+  align-items: center;
+  gap: 0 .5rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.user-info-container p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.user-info-container img {
+  width: 90px;
+  height: 90px;
+}
+
+.name p {
+  font-size: 2rem;
+}
+
+.name img {
+  object-fit: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.user-info-container p[data-temp] {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.parameter-container {
+  justify-content: center;
+  align-items: center;
+  gap: 10px 20px;
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.parameter {
+  background-color: #dbe2ef80;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px 0;
+  width: 30%;
+  max-width: 200px;
+  padding: 1rem;
+  display: flex;
+}
+
+.parameter img {
+  width: 50px;
+  height: 50px;
+}
+
+.parameter p:first-of-type {
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.parameter p:last-of-type {
+  font-size: 1rem;
+  font-weight: 200;
+}
+/*# sourceMappingURL=index.9a4f27f5.css.map */
